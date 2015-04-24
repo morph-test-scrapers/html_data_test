@@ -13,7 +13,7 @@ require 'scraperwiki'
 # p page.at('div.content')
 #
 # # Write out to the sqlite database using scraperwiki library
-ScraperWiki.save_sqlite(["name"], {"name" => "<h1>susan</h1>", "occupation" => '<h2>software</h2> <a href="https://morph.io/">developer</a>'})
+ScraperWiki.save_sqlite(["name"], {"name" => "<h1>susan</h1>", "occupation" => '<h2>software</h2> <a href="https://morph.io/">developer</a>', "company_url" => "https://morph.io/developers"})
 #
 # # An arbitrary query against the database
 # ScraperWiki.select("* from data where 'name'='peter'")
